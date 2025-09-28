@@ -8,7 +8,7 @@ This was developed to solve the issue of spraying several protocols simultaneous
 
 # Requirements
 ```
-sudo apt install nxc
+sudo apt install netexec
 ```
 # Install
 ```
