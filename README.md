@@ -4,7 +4,7 @@
 
 
 # Description
-This was developed to solve the issue of spraying several protocols simultaneously via netexec / nxc. The tool 𝘀𝗽𝗿𝗮𝘆𝗺𝗲 dynamically identifies all the protocols netexec / nxc has available then takes a simple 'USERNAME:PASSWORD' and <HOSTS_FILE> to spray everything into infinity!
+This was developed to solve the issue of spraying several protocols simultaneously via netexec / nxc. The tool 𝘀𝗽𝗿𝗮𝘆𝗺𝗲 dynamically identifies all the protocols netexec / nxc has available then takes a simple `'USERNAME:PASSWORD'` and `<HOSTS_FILE>` to spray everything into infinity!
 
 # Requirements
 ```
