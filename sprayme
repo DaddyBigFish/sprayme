@@ -1,22 +1,22 @@
 #!/usr/bin/env bash
 set -euo pipefail
 if (( $# != 2 )); then
-  echo "Usage: sprayme 'USERNAME:PASSWORD' <HOSTS_FILE>" >&2
+  echo "[*] Usage: sprayme 'USERNAME:PASSWORD' <HOSTS_FILE>" >&2
   exit 1
 fi
 up="$1"
 H="$2"
 if [[ ! -e "$H" ]]; then
-  echo "[X] ERROR:  File containing hosts is invalid: $H" >&2
+  echo "[-] ERROR: The file containing the hosts is invalid: $H" >&2
   exit 1
 fi
 if [[ "$up" != *:* ]]; then
-  echo "Credentials must be in the form 'USERNAME:PASSWORD'" >&2
+  echo "[-] ERROR: The credentials must be in the form of 'USERNAME:PASSWORD'" >&2
   exit 1
 fi
 IFS=':' read -r U P <<< "$up"
 if [[ -z "$U" || -z "$P" ]]; then
-  echo "USERNAME and PASSWORD must not be empty (Format: 'USERNAME:PASSWORD')" >&2
+  echo "[-] ERROR: The username and/or password must not be empty." >&2
   exit 1
 fi
 mapfile -t protos < <(nxc -h 2>&1 | grep -oP '\{[^}]+\}' | head -n1 | tr -d '{}' | tr ',' '\n' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
