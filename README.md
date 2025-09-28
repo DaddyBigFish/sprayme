@@ -1,6 +1,7 @@
 # sprayme
-### Spray literally everything you can! 
-<img src="https://github.com/user-attachments/assets/43306087-42cf-48fb-b118-0c416d65835a" alt="kcme" width="200"/>    
+### Protocol spraying super simple! 
+<img src="https://github.com/user-attachments/assets/0a8fb74b-8663-4905-a87d-ee235bf48878" alt="sprayme" width="200"/>    
+
 
 # Description
 This was developed to solve the issue of spraying several protocols simultaneously via netexec / nxc. The tool 𝘀𝗽𝗿𝗮𝘆𝗺𝗲 dynamically identifies all the protocols netexec / nxc has available then takes a simple 'USERNAME:PASSWORD' and <HOSTS_FILE> to spray everyhing into infinity!
